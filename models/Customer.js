@@ -1,19 +1,18 @@
-const errors = require('restify-errors');
 const mongoose = require('mongoose');
 const timestamp = require('mongoose-timestamp');
 
 const CustomerSchema = new mongoose.Schema({
-    name:{
+    name: {
         type: String,
         required: true,
         trim: true
     },
-    email:{
+    email: {
         type: String,
         required: true,
         trim: true
     },
-    balance:{
+    balance: {
         type: Number,
         default:0
     }
